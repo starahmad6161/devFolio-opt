@@ -27,12 +27,12 @@ function checkScroll(e) {
             //Get background image
             const backgroundImage = (image.style.backgroundImage);
             if (dataSrc && dataSrc != src) {
-                setTimeout(() => {
-                    image.setAttribute("src", dataSrc)
-                }, 500);
+                image.setAttribute("src", dataSrc)
             }
             if (dataBg && `url("${dataBg}")` != backgroundImage) {
-                image.style = `background-image: url(${dataBg})`;
+                setTimeout(() => {
+                    image.style = `background-image: url(${dataBg})`;
+                }, 500);
             }
         //If the image is not in viewport
         } else {
