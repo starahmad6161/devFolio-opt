@@ -30,9 +30,7 @@ function checkScroll(e) {
                 image.setAttribute("src", dataSrc)
             }
             if (dataBg && `url("${dataBg}")` != backgroundImage) {
-                setTimeout(() => {
-                    image.style = `background-image: url(${dataBg})`;
-                }, 1000);
+                image.style = `background-image: url(${dataBg})`;
             }
         //If the image is not in viewport
         } else {
@@ -56,5 +54,5 @@ function debounce(func, wait = 5, immediate = true) {
         if (callNow) func.apply(context, args);
     }
 }
-window.addEventListener("load", debounce(checkScroll));
+//window.addEventListener("load", debounce(checkScroll));
 window.addEventListener("scroll", debounce(checkScroll));

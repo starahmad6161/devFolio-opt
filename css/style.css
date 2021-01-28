@@ -78,7 +78,7 @@ a:hover
 /*Start Home*/
 .home
 {
-    background: center center no-repeat;
+    background: url("../imgs/intro-bg.jpg") center center no-repeat;
     background-size: cover;
     height: 100vh;
 }
