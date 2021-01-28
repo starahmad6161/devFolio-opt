@@ -54,4 +54,5 @@ function debounce(func, wait = 5, immediate = true) {
         if (callNow) func.apply(context, args);
     }
 }
+window.addEventListener("load", debounce(checkScroll));
 window.addEventListener("scroll", debounce(checkScroll));
