@@ -1,0 +1,370 @@
+
+.lazy-loading
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+a
+{
+    color: inherit;
+}
+a:hover
+{
+    text-decoration: none;
+}
+.shadow-md
+{
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.back-mine
+{
+    background-color: #0078ff  !important;
+}
+.text-mine
+{
+    color: #0078ff  !important;
+}
+.bg-gray
+{
+    background-color: #f5f5f5;
+}
+.gray-color
+{
+    color: #4e4e4e;
+}
+.font-weight-600
+{
+    font-weight: 600;
+}
+.title-underline
+{
+    position: relative;
+    padding-bottom: .6rem;
+}
+.title-underline::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+}
+.subtitle-underline
+{
+    position: relative;
+    padding-bottom: 1rem;
+}
+.subtitle-underline::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+}
+
+.section-title
+{
+    font-size: 2rem;
+}
+
+/*Start Home*/
+.home
+{
+    background: center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.home .overlay
+{
+    background-color: rgba(0,0,0,.5);
+}
+.home .overlay .navbar-brand
+{
+    font-size: 1.6rem;
+}
+.home .overlay .nav-item .nav-link
+{
+    transition: .2s;
+    position: relative;
+}
+.home .overlay .nav-item .nav-link::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform .3s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.home .overlay .nav-item .nav-link:hover::after
+{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.home .title
+{
+    font-size: 4.5rem;
+}
+.home .subtitle
+{
+    font-size: 2.5rem;
+    white-space: nowrap;
+    animation: typing  5s infinite linear;
+    overflow: hidden;
+    width: 100%;
+}
+.home .subtitle span
+{
+    position: relative;
+}
+.home .subtitle span::after
+{
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color:#fff;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    animation: typeCursor  1s infinite linear;
+}
+@keyframes typing
+{
+    0%{
+        width: 100%;
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes typeCursor
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+/*End Home*/
+
+/*Start About */
+.about .progress
+{
+    height: .7rem;
+}
+.about .title
+{
+    font-size: 1.1rem;
+}
+.about .progress-bar.html-prog
+{
+    width: 85%;
+}
+.about .progress-bar.css3-prog
+{
+    width: 75%;
+}
+.about .progress-bar.php-prog
+{
+    width: 50%;
+}
+.about .progress-bar.js-prog
+{
+    width: 90%;
+}
+/*End About */
+
+/*Start services*/
+.services .box
+{
+    border-radius: 1rem;
+}
+.services .box .icon
+{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: .5s;
+}
+.services .box .icon i
+{
+    transition: .5s;
+}
+.services .box:hover .icon
+{
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px rgba(0, 119, 255, 0.42);
+}
+.services .box:hover .icon i
+{
+    color: #fff;
+}
+/*End services*/
+
+/*Start counter-section*/
+.counter-section
+{
+    background: center center fixed;
+}
+.counter-section .overlay
+{
+    background-color: rgba(0, 119, 255, 0.7);
+}
+.counter-section .icon
+{
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+.counter-section .icon i
+{
+    transition: .5s;
+}
+.counter-section .number
+{
+    font-size: 2rem;
+}
+/*End counter-section*/
+
+/*Start portfolio*/
+.portfolio .card .card-img
+{
+    transition: 1s;
+}
+.portfolio .card:hover .card-img
+{
+    transform: scale(1.3);
+}
+.portfolio .card-text
+{
+    font-size: .8rem;
+}
+.portfolio .circle
+{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0078ff;
+}
+/*End portfolio*/
+
+
+
+/*Start testimonial*/
+.testimonial
+{
+    background: center center fixed;
+    background-size: cover;
+}
+.testimonial .overlay
+{
+    background-color: rgba(0, 119, 255, 0.7);
+}
+.testimonial .client-desc
+{
+    width: 50%;
+}
+.testimonial .commit
+{
+    width: 50px;
+    height: 50px;
+}
+.testimonial .carousel-indicators .indicator
+{
+    height: 7px;
+    background-color: #fff;
+    transition: .5s;
+    width: 20px;
+}
+.testimonial .carousel-indicators .indicator.active
+{
+    background-color: #1B1B1B;
+    width: 25px;
+}
+@media (max-width: 991px) {    
+    .testimonial .client-desc
+    {
+        width: 100%;
+    }
+}
+/*End testimonial*/
+
+
+/*Start Blog Section*/
+.blog-section .image
+{
+    
+}
+.blog-section .category-name
+{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: .7rem;
+    font-weight: 500;
+}
+.blog-section .author-img
+{
+    width: 32px;
+    height: 32px;
+}
+.blog-section .author-name
+{
+    transition: .3s;
+}
+.blog-section .author-name:hover
+{
+    color: #0078ff;
+}
+/*End Blog Section*/
+
+/*Start contact*/
+.contact
+{
+    background: center center fixed;
+    background-size: cover;
+}
+.contact .overlay
+{
+    background-color: rgba(0, 119, 255, 0.7);
+}
+.contact textarea
+{
+    height: 100px;
+}
+.contact .list-icons .icon
+{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 0 4px #0078ff;
+    transition: .5s;
+}
+.contact .list-icons .icon:hover
+{
+    background-color: #0078ff;
+    box-shadow: 0 0 0 4px rgba(0, 119, 255, 0.42);
+    color: #fff;
+    cursor: pointer;
+}
+/*End contact*/
