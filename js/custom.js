@@ -32,7 +32,7 @@ function checkScroll(e) {
             if (dataBg && `url("${dataBg}")` != backgroundImage) {
                 setTimeout(() => {
                     image.style = `background-image: url(${dataBg})`;
-                }, 500);
+                }, 1000);
             }
         //If the image is not in viewport
         } else {
