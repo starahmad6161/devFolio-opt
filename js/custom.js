@@ -27,7 +27,9 @@ function checkScroll(e) {
             //Get background image
             const backgroundImage = (image.style.backgroundImage);
             if (dataSrc && dataSrc != src) {
-                image.setAttribute("src", dataSrc)
+                setTimeout(() => {
+                    image.setAttribute("src", dataSrc)
+                }, 500);
             }
             if (dataBg && `url("${dataBg}")` != backgroundImage) {
                 image.style = `background-image: url(${dataBg})`;
